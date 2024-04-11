@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const card2 = document.getElementById("card2");
     const card3 = document.getElementById("card3");
 
+
+
     
 
     selecion.addEventListener('click', () => {
@@ -49,6 +51,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+
+
+
+    const ligas = document.getElementById('Ligas');
+
+    ligas.addEventListener('click',()=>{
+        const imagen1 = card1.querySelector('.card-img-top');
+        imagen1.src = 'italia.jpg';
+        document.getElementById("p1").innerText="En la cima del ranking mundial, la Serie A italiana se ha colocado en primer lugar con 1619,5 Pts ";
+
+        const imagen2 = card2.querySelector('.card-img-mid');
+        imagen2.src = 'PREMIERLEAGUE1.jpg';
+        document.getElementById("p2").innerText="En segundo lugar la denominada liga mas competitiva del mundo se queda con el segundo lugar la Premier legue";
+
+        const imagen3 = card3.querySelector('.card-img-low');
+        imagen3.src= 'LALIGASANMTANDER.jpg';
+        document.getElementById("p3").innerText="En tercer lugar la liga española denominada la liga santander bajandose del trono hasta este puesto";
+
+
+
+    });
 
 
 
