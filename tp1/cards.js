@@ -3,10 +3,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const card1 = document.getElementById("card1");
     const card2 = document.getElementById("card2");
     const card3 = document.getElementById("card3");
+    const top3 = document.getElementById('top3');
 
 
+    top3.addEventListener('click',()=>{
+        card1.getElementsByTagName('img')[0].src = 'la-pelota.webp';
+         // Restablecer el texto del párrafo al valor inicial
+        card1.getElementsByTagName('p')[0].textContent = ' El fútbol es un deporte de equipo que se juega entre dos equipos de once jugadores cada uno. El objetivo del juego es marcar goles al introducir la pelota en la portería del equipo contrario. Los jugadores utilizan principalmente sus pies para controlar y pasar la pelota, aunque también pueden usar otras partes del cuerpo, excepto las manos y los brazos(a excepción del portero dentro de su área de penalti). inicial';
 
-    
+        card2.getElementsByTagName('img')[0].src='el-mundo-del-futbol.jpg';
+        card2.getElementsByTagName('p')[0].textContent=' Es uno de los deportes más populares y ampliamente practicados en todo el mundo. También es conocido como soccer en algunos países, principalmente en América del Norte.';
+
+        card3.getElementsByTagName('img')[0].src='futbol.jpg';
+        card3.getElementsByTagName('p')[0].textContent='El fútbol tiene países con ligas y equipos que son considerados de alto nivel en términos de calidad de juego, talento de los jugadores y competitividad.';
+
+    });
 
     selecion.addEventListener('click', () => {
         const imagen1 = card1.querySelector('.card-img-top');
